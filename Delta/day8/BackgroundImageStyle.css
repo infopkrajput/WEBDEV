@@ -1,0 +1,26 @@
+#one {
+    width: 500px;
+    height: 400px;
+    background-image: url("images/bg1.bmp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+#two{
+    width: 500px;
+    height: 400px;
+    background-image: url("images/bg2.bmp"), url("bg3.bmp");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%, 50%;
+}
+
+#three{
+    width: 500px;
+    height: 400px;
+    background-image: url("images/bg1.bmp");
+    background-size: cover;   /* Makes the image cover the entire screen */
+    background-position: center;
+    background-attachment: fixed;   /* Image remains fixed when scrolling */
+}
