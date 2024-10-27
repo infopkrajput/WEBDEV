@@ -1,0 +1,55 @@
+
+  <body>
+    <form id="form">
+      <div class="field">
+        <label for="from_name">from_name</label>
+        <input type="text" name="from_name" id="from_name" />
+      </div>
+      <div class="field">
+        <label for="email_id">email_id</label>
+        <input type="text" name="email_id" id="email_id" />
+      </div>
+      <div class="field">
+        <label for="message">message</label>
+        <input type="text" name="message" id="message" />
+      </div>
+
+      <input type="submit" id="button" value="Send Email" />
+    </form>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("TfJXHqbXpRj-N4iM_");
+    </script>
+
+    <script>
+      const btn = document.getElementById("button");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "template_c8wnbsg";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("Sent!");
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
