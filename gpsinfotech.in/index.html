@@ -25,39 +25,31 @@
       sizes="16x16"
       href="img/favicon-16x16.png"
     /> -->
-
 </head>
 
-<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
-  <!--navbar-->
-  <nav class="navbar glass" style="height: 70px">
+<body>
+  <!-- New Top Navbar for Utilities and Partner -->
+  <nav class="top-navbar glass" style="height: 50px;">
+    <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+      <a href="Utilities.html" class="top-nav-link">Download Utilities</a>
+      <a href="Partner.html" class="top-nav-link">Become a Partner</a>
+    </div>
+  </nav>
+
+  <!-- Original Navbar with adjusted top position -->
+  <nav class="navbar glass" style="top: 50px;">
     <span>
-      <a href="#home" style="display: flex; align-items: center">
+      <a href="#home" style="display: flex; align-items: center;">
         <img class="imglogo" src="./img/logo.png" width="60" style="margin: -25px -10px -25px -20px" />
         <h1 class="logo">&nbsp;GPS INFOTECH</h1>
       </a>
     </span>
     <ul class="nav-links">
-      <li>
-        <a href="#home" id="pri" class="active cir_border">Home</a>
-      </li>
+      <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
       <li><a href="#events" id="sec" class="cir_border">Services</a></li>
-      <li>
-        <a href="#about" id="tri" class="cir_border">Products</a>
-      </li>
-      <li>
-        <a href="#aboutMyself" id="hex" class="cir_border">About</a>
-      </li>
-      <li>
-        <a href="#contact" id="hept" class="cir_border">Contact</a>
-      </li>
-      <li>
-        <a href="https://ra.prodigisign.net/Registration/PartnerRegistrationByReference?referredBy=5c3d0dc9-f31d-4d53-b36e-544ee17869a7&roleSelected=9"
-          id="additional" class="cir_border">Prodigisign</a>
-      </li>
-      <li>
-        <a href="https://signx.club/create-partner/NTg0Nw==/OQ==" id="additional" class="cir_border">SignX</a>
-      </li>
+      <li><a href="#gellary" id="tri" class="cir_border">Products</a></li>
+      <li><a href="#aboutMyself" id="hex" class="cir_border">About</a></li>
+      <li><a href="#contact" id="hept" class="cir_border">Contact</a></li>
       <li>
         <div>
           <input type="checkbox" class="checkbox dark" id="checkbox" />
@@ -71,20 +63,21 @@
     </ul>
     <img src="./img/menu-btn.png" alt="" class="menu-btn" />
   </nav>
-  <!--navbar-->
 
+  <!-- Home -->
   <header id="home">
     <div class="header-content">
       <h2 id="quote">
         Welcome to GPSInfotech – Your Trusted Partner for Digital Signatures
       </h2>
       <div class="line"></div>
-      <h1 class="home_line" >| SECURE | AUTHENTICATE | SIMPLIFY |</h1>
+      <h1 class="home_line">| SECURE | AUTHENTICATE | SIMPLIFY |</h1>
       <a href="#aboutMyself" class="ctn"
         onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Learn
         more</a>
     </div>
   </header>
+  <!-- Home -->
 
   <!--Services-->
   <section class="events" id="events">
@@ -96,45 +89,49 @@
       <div class="row">
         <article class="card col">
           <img class="card-img" src="./img/1.png" />
-          <h4 class="dark">Everest camp trek</h4>
+          <h4 class="dark">Class 2</h4>
           <p class="font-color">
-            Everest base camp trek is without a doubt, one of the most
-            renowned travel destinations in the world.
+            Class 2 digital signatures are used for verifying the identity of individuals and organizations for online
+            transactions and document signing.
           </p>
-          <a href="#" class="ctn">All Details</a>
+          <a href="https://wa.me/+918800316712?text=Hi,%20Want%20To%20know%20The%20Price%20of%20Class%202%20Signature%20?"
+            class="ctn">Get Price</a>
         </article>
         <article class="card col">
-          <img src="./img/3.png" />
-          <h4 class="dark">Walking holidays</h4>
+          <img src="./img/1.png" />
+          <h4 class="dark">Class 3</h4>
           <p class="font-color">
-            Join small guided group walks, enjoy a challenging trek, or a
-            luxury private guided walk which can be made especially for you.
+            Class 3 digital signatures are the highest level of digital signatures in India.
+            <br>
+            <br>
+            <br>
           </p>
-          <a href="#" class="ctn">All Details</a>
+          <a href="https://wa.me/+918800316712?text=Hi,%20Want%20To%20know%20The%20Price%20of%20Class%203%20Signature%20?"
+            class="ctn">Get Price</a>
         </article>
         <article class="card col">
-          <img src="./img/2.png" />
-          <h4 class="dark">Andaman Beaches</h4>
+          <img src="./img/1.png" />
+          <h4 class="dark">DGFT</h4>
           <p class="font-color">
-            Diving in Andaman Beaches is exceptional. The costal belt
-            surroundings is one of the richest coral reef ecosystems in the
-            world.
+            The Directorate General of Foreign Trade (DGFT) is the government agency responsible for administering
+            foreign trade in India.
           </p>
-          <a href="#" class="ctn">All Details</a>
+          <a href="https://wa.me/+918800316712?text=Hi,%20Want%20To%20know%20The%20Price%20of%20DGFT%20Signature%20?"
+            class="ctn">Get Price</a>
         </article>
       </div>
     </div>
   </section>
   <!--Services-->
 
-  <!-- Product -->
-  <section id="about">
+  <!-- Gellary -->
+  <section id="gellary">
     <div class="title">
-      <h1 class="font-color"></h1>
+      <h1 class="font-color">Gellary</h1>
       <div class="line"></div>
     </div>
     <br />
-    <div id="about_us">
+    <div id="gellary_us">
       <div class="boxx">
         <div class="containerx">
           <input type="radio" name="slider" id="item-1" checked />
@@ -142,7 +139,7 @@
           <input type="radio" name="slider" id="item-3" />
           <div class="cards">
             <label class="cardt" for="item-1" id="col-img-1">
-              <img src="./img/1.png" />
+              <img src="./img/1.jpg" />
             </label>
             <label class="cardt" for="item-2" id="col-img-2">
               <img src="./img/2.png" />
@@ -152,11 +149,10 @@
             </label>
           </div>
         </div>
-        <span id="about-quad"><a href="#home">
+        <span id="about-quad">
+          <a href="#home">
             <center>
-              <h1 style="font-family: var(--ff-montserrat); color: white">
-                Find that
-              </h1>
+              <h1 style="font-family: var(--ff-montserrat); color: white">Find that</h1>
               <br />
               <img class="img2" src="./img/gpslogo.png" width="200" style="border-radius: 12%" />
               <br />
@@ -167,10 +163,16 @@
       </div>
     </div>
   </section>
-  <!-- Product -->
+
+  <!-- Modal for Image Popup with Navigation -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
 
   <!-- about -->
-
   <section class="aboutMyself" id="aboutMyself">
     <div class="title">
       <h1 class="font-color">About</h1>
@@ -185,11 +187,9 @@
       </div>
     </div>
   </section>
-
   <!-- about -->
 
   <!-- contact -->
-
   <section id="contact">
     <div class="title">
       <h1 class="font-color">Contact Us</h1>
@@ -230,7 +230,7 @@
         </div>
         <div class="c_boxx">
           <a href="mailto:gpsinfotech@gmail.com"><i class="fa fa-envelope"></i>
-            Mail: gpsinfotech@gmail.com
+            Mail: dsc.gps@gmail.com
           </a>
         </div>
         <div class="c_boxx">
@@ -248,13 +248,10 @@
   </section>
   <!-- contact  -->
 
-  <!-- end -->
 
   <!--footer-->
   <section class="footer">
-    <span>Created By
-      <a href="https://www.linkedin.com/in/pknatic/" target="_blank">Pushpendra Kumar</a>
-      | &#169; 2024 All rights reserved.</span>
+    <span>Created By <a href="https://www.linkedin.com/in/pknatic/" target="_blank">Pushpendra Kumar</a> | &#169; 2024 All rights reserved.</span>
   </section>
   <!--footer-->
 
@@ -275,7 +272,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <script type="text/javascript">
-    emailjs.init("TfJXHqbXpRj-N4iM_");
+    emailjs.init("rLt84XV8yl31AP4qL");
   </script>
 
   <script>
@@ -288,8 +285,8 @@
 
         btn.value = "Sending...";
 
-        const serviceID = "default_service";
-        const templateID = "template_c8wnbsg";
+        const serviceID = "service_073ggl5";
+        const templateID = "template_5em2b2r";
 
         emailjs.sendForm(serviceID, templateID, this).then(
           () => {

@@ -69,32 +69,10 @@ checkDarkMode();
 checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark");
     document.body.classList.fins("dark")
-        ? localStorage.setItem("tourism_website_darkmode", true)
-        : localStorage.setItem("tourism_website_darkmode", false);
+        ? localStorage.setItem("tourism_website_darkmode", false)
+        : localStorage.setItem("tourism_website_darkmode", true);
 });
 
-// scroll button
-
-let mybutton = document.getElementById("upbtn");
-
-window.onscroll = function () {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-    ) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
 
 // Update Navbar While Scrolling
 function updateNav() {
@@ -135,4 +113,63 @@ window.addEventListener("scroll", updateNav);
 
 
 
+// ---------------------------------------------------------------------------------
+// Gellary 
 
+let modal = document.querySelector('.modal');
+let modalImage = document.querySelector('.modal-content');
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.cards img');
+
+// Open modal with the clicked image
+function openModal(index) {
+  currentImageIndex = index;
+  modal.style.display = 'flex';
+  updateModalImage();
+}
+
+// Update modal image based on `currentImageIndex`
+function updateModalImage() {
+  modalImage.src = images[currentImageIndex].src;
+}
+
+// Close modal
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Show next image
+function showNextImage() {
+  currentImageIndex = (currentImageIndex + 1) % images.length; // Loop to start if at last image
+  updateModalImage();
+}
+
+// Show previous image
+function showPreviousImage() {
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length; // Loop to end if at first image
+  updateModalImage();
+}
+
+// Event listeners
+document.querySelectorAll('.cards img').forEach((img, index) => {
+  img.addEventListener('click', () => openModal(index));
+});
+
+document.querySelector('.close').addEventListener('click', closeModal);
+document.querySelector('.next').addEventListener('click', showNextImage);
+document.querySelector('.prev').addEventListener('click', showPreviousImage);
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') {
+    showNextImage();
+  } else if (e.key === 'ArrowLeft') {
+    showPreviousImage();
+  } else if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+
+
+
+// -------------------------------------------------------------------------

@@ -1,0 +1,114 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+marquee {
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+/* Container and Section Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #025e0a;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Table Styles */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #025e0a;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #025e0a;
+}
+
+a:hover {
+    color: #1c5e0a;
+}
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #025e0a;
+    color: white;
+}
+
+.footer a {
+    color: #ffcc00;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+    }
+}
